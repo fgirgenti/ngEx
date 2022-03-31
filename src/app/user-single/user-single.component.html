@@ -1,4 +1,4 @@
-<div class="c">
+<div class="c" [ngClass]="{'red': user.role === 'staff', 'blue': user.role === 'manager', 'green': user.role === 'admin'}">
   <img src="{{ user.profilePhotoUrl }}" width="150px" />
   <p>
     <b> {{ user.name }} {{ user.surname }} </b>
