@@ -1,14 +1,7 @@
 <div>
   <ol>
     <li *ngFor="let user of users">
-      <div class="c">
-        <img src="{{ user.profilePhotoUrl }}" width="150px" />
-        <p>
-          <b> {{ user.name }} {{ user.surname }} </b>
-        </p>
-        <p>{{ user.age }}</p>
-        <p>{{ user.address.city }}</p>
-      </div>
+      <app-user-single [user]="user"></app-user-single>
     </li>
   </ol>
 </div>
