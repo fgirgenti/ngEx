@@ -1,0 +1,13 @@
+.c1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(70,130,180,0.7);
+    border: 1px solid steelblue;
+    padding: 10px;
+    margin: 20px;
+}
+
+.c2 {
+    display: flex;
+}

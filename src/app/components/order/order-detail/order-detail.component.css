@@ -1,0 +1,9 @@
+div {
+    display: flex;
+    justify-content: center;
+    background-color:rgba(124,252,0,0.7);
+    border: 1px solid green;
+    padding: 10px;
+    margin: 20px;
+    width: 20vw;
+}

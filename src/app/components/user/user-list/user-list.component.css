@@ -1,0 +1,10 @@
+div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    background-color: rgba(50,205,50,0.3);
+    border: 1px solid green;
+    height: 75vh;
+}
