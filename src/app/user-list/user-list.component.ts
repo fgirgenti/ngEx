@@ -61,4 +61,8 @@ export class UserListComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
+
+  deleteUser(user: User) {
+    this.users.splice(this.users.indexOf(user),1);
+  }
 }

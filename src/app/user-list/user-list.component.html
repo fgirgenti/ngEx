@@ -1,7 +1,7 @@
 <div>
   <ol>
     <li *ngFor="let user of users">
-      <app-user-single [user]="user"></app-user-single>
+      <app-user-single [user]="user" (deleted)="deleteUser($event)"></app-user-single>
     </li>
   </ol>
 </div>

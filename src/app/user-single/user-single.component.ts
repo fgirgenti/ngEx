@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { User } from '../models/User';
 
 @Component({
@@ -8,8 +8,13 @@ import { User } from '../models/User';
 })
 export class UserSingleComponent implements OnInit {
   @Input() user!: User;
+  @Output() deleted = new EventEmitter();
 
   constructor() {}
 
   ngOnInit(): void {}
+
+  delete(user: User) {
+    this.deleted.emit(user);
+  }
 }
